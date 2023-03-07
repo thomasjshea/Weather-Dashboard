@@ -1,0 +1,28 @@
+:root {
+    --blue: #03244d;
+    --light-blue: #496e9c;
+    --orange: #dd550c;
+    --light-orange: #f68026;
+    --white: #fff;
+}
+
+.header {
+    background-color: var(--blue);
+    color: var(--white)
+}
+
+.search-area {
+    width: 25%
+}
+
+.text-area {
+    width: 50%;
+    border-radius: 7px;
+}
+
+.search-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 50%;
+    margin-top: 5px;
+}
