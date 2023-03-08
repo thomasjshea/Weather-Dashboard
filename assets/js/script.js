@@ -28,6 +28,16 @@ function getCoordinates() {
                 $('#humidity').html(data.main.humidity)
             })
         }
+        function getForecast() {
+            let forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat='+ lat +'&lon='+ lon +'&units=imperial&appid='+ appID
+            fetch(forecastURL)
+            .then(function(response){
+                return response.json()
+            })
+            .then(function(data){
+                console.log(data)
+            })
+        }
         getWeather()
         getForecast()
     })
@@ -53,6 +63,7 @@ $('#search-btn').click(function (event) {
     // event.preventDefault()
     let city = $('#search-bar').val().trim()
     citySearches.push(city)
+    localStorage.setItem('searches', citySearches)
     showButtons()
     getCoordinates()
 })

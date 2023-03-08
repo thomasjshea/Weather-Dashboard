@@ -31,6 +31,10 @@
     border-color: var(--light-blue);
 }
 
+.weather{
+    border: 1px solid var(--blue);
+}
+
 .cities {
     background-color: var(--light-blue);
     color: var(--light-orange)
