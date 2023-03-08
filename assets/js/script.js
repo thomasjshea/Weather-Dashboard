@@ -21,7 +21,11 @@ function getCoordinates() {
             .then(function(data){
                 console.log(data)
                 $('#city').html(data.name)
+                $('#date').html(dayjs().format('MM/DD/YYYY'))
                 $('#weather-image').attr('src', 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png')
+                $('#temperature').html(data.main.temp)
+                $('#wind').html(data.wind.speed)
+                $('#humidity').html(data.main.humidity)
             })
         }
         getWeather()
