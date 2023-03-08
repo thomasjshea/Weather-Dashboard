@@ -8,21 +8,30 @@
 
 .header {
     background-color: var(--blue);
-    color: var(--white)
+    color: var(--orange)
 }
 
 .search-area {
-    width: 25%
+ border-bottom: 1px solid var(--blue);
 }
 
 .text-area {
-    width: 50%;
     border-radius: 7px;
 }
 
 .search-btn {
     background-color: var(--blue);
-    color: var(--white);
-    width: 50%;
-    margin-top: 5px;
+    color: var(--orange);
+    border-radius: 10px;
+}
+
+.search-btn:hover {
+    background-color: var(--light-blue);
+    color: var(--light-orange);
+    border-color: var(--light-blue);
+}
+
+.cities {
+    background-color: var(--light-blue);
+    color: var(--light-orange)
 }
