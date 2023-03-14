@@ -36,6 +36,7 @@ function getCoordinates() {
             })
             .then(function(data){
                 console.log(data)
+                $('#weather-image-1').attr('src','http://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png')
             })
         }
         getWeather()
