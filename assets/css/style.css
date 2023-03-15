@@ -1,3 +1,4 @@
+/* sets color scheme for document */
 :root {
     --blue: #03244d;
     --light-blue: #496e9c;
@@ -6,19 +7,23 @@
     --white: #fff;
 }
 
+/* header styling */
 .header {
     background-color: var(--blue);
     color: var(--orange)
 }
 
+/* search area styling */
 .search-area {
  border-bottom: 1px solid var(--blue);
 }
 
+/* input styling */
 .text-area {
     border-radius: 7px;
 }
 
+/* search button styling */
 .search-btn {
     background-color: var(--blue);
     color: var(--orange);
@@ -31,10 +36,12 @@
     border-color: var(--light-blue);
 }
 
+/* styles the output area */
 .weather{
     border: 1px solid var(--blue);
 }
 
+/* styling for the city button */
 .cities {
     background-color: var(--light-blue);
     color: var(--light-orange)
